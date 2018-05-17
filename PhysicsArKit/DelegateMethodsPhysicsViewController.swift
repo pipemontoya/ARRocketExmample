@@ -15,7 +15,12 @@ extension PhysicsViewController: ARSCNViewDelegate {
         viewModel.rederedDidAdd(node: node, for: anchor)
     }
     
+    func renderer(_ renderer: SCNSceneRenderer, didRemove node: SCNNode, for anchor: ARAnchor) {
+        viewModel.rendererDidRemove(node: node, for: anchor)
+    }
+    
     func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
         viewModel.renderedDidUpdate(node: node, for: anchor)
     }
+    
 }
