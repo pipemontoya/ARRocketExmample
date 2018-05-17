@@ -34,7 +34,7 @@ class PhysicsViewController: UIViewController {
     func setupSceneView() {
         let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = .horizontal
-        sceneView.debugOptions = ARSCNDebugOptions.showFeaturePoints
+        //sceneView.debugOptions = ARSCNDebugOptions.showFeaturePoints
         sceneView.delegate = self
         sceneView.session.run(configuration)
     }
